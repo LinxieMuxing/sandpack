@@ -15,6 +15,8 @@ Object.keys(SANDPACK_THEMES).forEach((themeName) =>
         showInlineErrors: true,
         showNavigator: true,
         showTabs: true,
+        showConsole: true,
+        bundlerURL: "http://localhost:3000"
       }}
       template="react"
       theme={themeName as keyof typeof SANDPACK_THEMES}

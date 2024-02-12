@@ -11,6 +11,7 @@ import { SandpackLayout } from "../components/common/Layout";
 import { RoundedButton } from "../components/common/RoundedButton";
 import { ConsoleIcon } from "../components/icons";
 import { SandpackProvider } from "../contexts/sandpackContext";
+import { SandpackFileExplorer } from "../components";
 import { css, THEME_PREFIX } from "../styles";
 import { SANDBOX_TEMPLATES } from "../templates";
 import type {
@@ -210,7 +211,9 @@ export const Sandpack: SandpackInternal = ({
         className={
           rtlLayout ? classNames("rtl-layout", [rtlLayoutClassName]) : ""
         }
+        style={{"--sp-layout-height":'90vh'} as React.CSSProperties}
       >
+        <SandpackFileExplorer/>
         <SandpackCodeEditor
           {...codeEditorOptions}
           style={{
