@@ -16,7 +16,8 @@ Object.keys(SANDPACK_THEMES).forEach((themeName) =>
         showNavigator: true,
         showTabs: true,
         showConsole: true,
-        bundlerURL: "http://47.116.204.49:3000"
+        // bundlerURL: "http://47.116.204.49:3000"
+        bundlerURL: "http://localhost:3000",
       }}
       template="react"
       theme={themeName as keyof typeof SANDPACK_THEMES}
